@@ -3,13 +3,11 @@
 
 ## Rôle
 Le projet **Octopus Brain** est un outil destiné à créer des modèles simples et à les conserver pour pouvoir les réutiliser.
-L’objectif de ce projet est de développer des jumeaux numériques pour les cellules climatiques.
 
 --- 
 
 ## Outil
 **version : 013**
-
 ### Modules
 - **SmartFrame** : traite les données
        - **Échantillonneur** : échantillonne les données  
@@ -19,15 +17,23 @@ L’objectif de ce projet est de développer des jumeaux numériques pour les ce
 - **Tester** : évalue le modèle
 - **Player** : interroge les modèles existants
 - **Cleaner** : nettoie les données résiduelles de l’outil et sauvegarde les métadonnées
-### Métadonnées
+## Paramétrés du modèle
+Dans ce projet, nous avons utilisé un modèle Sequential en deep learning.  
+L’architecture est composée de :
+- Couche d’entrée dense, normalisée avec _BatchNormalization_ et régularisée avec _Dropout (20%)_
+- Couche cachée dense de 64 neurones, suivie de _BatchNormalization_ et _Dropout (20%)_
+- Couche de sortie dense adaptée à la tâche de régression
+- Optimiseur : _AdamW_
+- Fonction de perte : adaptée à la régression (ex. _MSE_)
+- Métriques de suivi : _MAPE_ et _MSE_
 
+### Métadonnées
 - Noms des paramètres (entrée, sortie)
 - Données d’entraînement (in / out)
 - Résultats des indicateurs d’évaluation (MAE, MSE, R²)
 - Temps d’entraînement
 - Fonction de perte (_loss_) utilisée
 ### Métriques d’évaluation
-
 - MAE : (Mean Absolute Error)
 	- Faible -> GOOD , Fort -> BAD
 	Mesure la moyenne des écarts absolus entre les valeurs prédites et les valeurs réelles.
@@ -47,8 +53,9 @@ L’objectif de ce projet est de développer des jumeaux numériques pour les ce
 	$R2=1−∑(yi​−yˉ​)2∑(yi​−y^​i​)2​$
 
 ### Modéles
-- **brain_1** : pour simuler la température de reprise en fonction des conditions des cellules et des consignes
-- **brain_2** : pour simuler la température de reprise d’une cellule climatique
+- **brain_1** : un jumeau numérique permettant de simuler la température de reprise en fonction des conditions des cellules (CEREEP–Ecotron Île-de-France).
+- **brain_2** : un jumeau numérique pour simuler la température de reprise d’une cellule climatique (CEREEP–Ecotron Île-de-France).
+
 
 ### Arborescence
 ```bash
@@ -106,7 +113,7 @@ L’objectif de ce projet est de développer des jumeaux numériques pour les ce
 ```
 
 
-
+![[logo.webp]]
 
 
 
