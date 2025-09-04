@@ -1,0 +1,10 @@
+{
+  "params" : [
+    "TEMPERATURE_SONDE [R]",
+    "TEMPERATURE_CONSIGNE [R]",
+    "TEMPERATURE_SOUFFLAGE [R]",
+    "TEMPERATURE_ALLER_CHAUD [R]",
+    "TEMPERATURE_ALLER_FROID [R]"
+  ],
+  "result" : ["TEMPERATURE_REPRISE [R]"]
+}

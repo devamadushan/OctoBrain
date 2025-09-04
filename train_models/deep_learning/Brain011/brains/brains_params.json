@@ -1,0 +1,138 @@
+{
+    "brain1": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ],
+        "epochs": 200,
+        "duree": "0:00:18.998997",
+        "shape": "(850, 1)"
+    },
+    "brain2": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]",
+            "HYGROMETRIE_CONSIGNE [I]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]",
+            "HYGROMETRIE_CELLULE [R]"
+        ],
+        "epochs": [
+            10000
+        ],
+        "duree": [
+            "0:30:19.874198"
+        ],
+        "shape": "(1318, 2)"
+    },
+    "brain3": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]",
+            "HYGROMETRIE_CONSIGNE [I]",
+            "CONSIGNE_CO2 [I]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]",
+            "HYGROMETRIE_CELLULE [R]",
+            "CO2 [R]"
+        ],
+        "epochs": [
+            5000
+        ],
+        "duree": [
+            "0:08:19.632231"
+        ],
+        "shape": "(980, 3)"
+    },
+    "brain1-01": {
+        "params": [
+            "HYGROMETRIE_CONSIGNE [I]"
+        ],
+        "outputs": [
+            "HYGROMETRIE_CELLULE [R]"
+        ],
+        "epochs": 5000,
+        "duree": "0:11:15.361093",
+        "shape": "(1318, 1)"
+    },
+    "brain5": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]",
+            "HYGROMETRIE_CONSIGNE [I]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]",
+            "HYGROMETRIE_CELLULE [R]",
+            "HUMIDIFICATEUR [I]",
+            "V2V_DESHUMIDIF [B]",
+            "DESHUMIDIFICATEUR [B]",
+            "V2V_AIR_VICIE [B]",
+            "V2V_CAPTAGE_CO2 [B]",
+            "V2V_INJECTION_CO2 [B]",
+            "V2V_ABSORBTION_CO2 [B]",
+            "V2V_INJ_AIR_NEUF [B]"
+        ],
+        "epochs": [
+            2000
+        ],
+        "duree": [
+            "0:04:27.054548"
+        ],
+        "shape": "(1318, 2)"
+    },
+    "brain1-2": {
+        "params": [
+            "HYGROMETRIE_CONSIGNE [I]",
+            "TEMPERATURE_CONSIGNE [R]"
+        ],
+        "outputs": [
+            "HYGROMETRIE_CELLULE [R]"
+        ],
+        "epochs": 2000,
+        "duree": "0:04:25.327812",
+        "shape": "(1318, 2)"
+    },
+    "brain3-2": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]",
+            "HYGROMETRIE_CONSIGNE [I]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]",
+            "HYGROMETRIE_CELLULE [R]"
+        ],
+        "epochs": 2000,
+        "duree": "0:04:29.356565",
+        "shape": "(1318, 2)"
+    },
+    "brain2-1": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]",
+            "HYGROMETRIE_CONSIGNE [I]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]",
+            "HYGROMETRIE_CELLULE [R]"
+        ],
+        "epochs": 20000,
+        "duree": "1:00:26.566972",
+        "shape": "(1318, 2)"
+    },
+    "brain2-2": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ],
+        "epochs": [
+            200
+        ],
+        "duree": [
+            "0:00:36.383962"
+        ],
+        "shape": "(1318, 1)"
+    }
+}

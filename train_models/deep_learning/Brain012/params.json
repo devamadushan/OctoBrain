@@ -1,0 +1,68 @@
+{
+  "params" : [
+    "TEMPERATURE_CONSIGNE [R]"
+
+  ],
+  "result" : [
+    "TEMPERATURE_REPRISE [R]"
+
+  ],
+  "path_brain" : "brains/brain2.hdf5",
+  "name_brain" : "brain2",
+  "epoch_brain" : 20,
+  "input_shape" : 1,
+  "output_shape" : 1,
+  "echantilloner" : true,
+  "time_echantion" : 10,
+  "path_param_brains" : "brains/brains_params.json",
+  "meta_data" : "../Meta/thevaran/brain2",
+  "path_data_train" : {
+    "data_input" : "train/data/input_train/input.csv",
+    "data_output" : "train/data/output_train/output.csv",
+    "data_input_test" : "test/data/input_test/input.csv",
+    "data_output_test" : "training/data/output_test/output.csv"
+  },
+  "path_data_test" : {
+    "data_input" : "test/data/input_test/input.csv",
+    "data_output" : "test/data/output_test/output.csv",
+    "path_result" : "test/data/simuled/simuled.csv"
+
+  },
+  "path_data_play" : {
+    "data_formated" : "play/data/formated_data/formated_data.csv",
+    "data_input" : "play/data/input/input.csv",
+    "data_output" : "data_raw/to_client/data_out.csv"
+  },
+  "path_data_sketch" : {
+    "data_simuled" : "play/data/output/output.csv"
+  },
+  "path_formater_to_play" : {
+    "data_formated" : "play/data/formated_data/formated_data.csv",
+    "data_input" : "play/data/input/input.csv",
+    "data_to_play" : "data_raw/infer/data_play.csv",
+    "data_output" : "play/data/output/output.csv"
+  },
+    "path_formater_to_train" : {
+    "data_formated" : "train/data/formated_data/formated_data.csv",
+      "data_to_train" : "data_raw/train/data_train.csv",
+      "data_input" : "train/data/input_train/input.csv",
+    "data_output" : "train/data/output_train/output.csv"
+  },
+      "path_formater_to_test" : {
+    "data_formated" : "test/data/formated_data/formated_data.csv",
+      "data_to_test" : "data_raw/test/data_test.csv",
+      "data_input" : "test/data/input_test/input.csv",
+    "data_output" : "test/data/output_test/output.csv",
+        "data_simulated" : "test/data/simulated/simulated_data.csv",
+        "image" : "test/data/simulated/img.png"
+
+  },
+  "e_data" : {
+    "e_train" : "data_raw/to_sample/data_train.csv",
+    "f_train" : "data_raw/train/data_train.csv",
+    "e_test" : "data_raw/to_sample/data_test.csv",
+    "f_test" : "data_raw/test/data_test.csv",
+    "e_play" : "data_raw/to_sample/data_play.csv",
+    "f_play" : "data_raw/infer/data_play.csv"
+  }
+}

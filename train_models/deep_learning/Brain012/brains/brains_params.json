@@ -1,0 +1,35 @@
+{
+    "brain2": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ],
+        "epochs": [
+            20
+        ],
+        "duree": [
+            "0:00:09.603323"
+        ],
+        "shape": [
+            "(658, 1)"
+        ],
+        "MAE": [
+            1.36
+        ],
+        "MSE": [
+            2.3
+        ],
+        "R2": [
+            0.94
+        ],
+        "ecantion": 5,
+        "echantion": [
+            10
+        ],
+        "meta": [
+            "../Meta/thevaran/brain2/brain2_20250805_093208_7dea5eae.zip"
+        ]
+    }
+}

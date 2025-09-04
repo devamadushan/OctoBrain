@@ -1,0 +1,50 @@
+{
+  "params" : [
+    "TEMPERATURE_CONSIGNE [R]"
+  ],
+  "result" : ["TEMPERATURE_REPRISE [R]"],
+  "path_brain" : "data/brain/brain5.hdf5",
+  "name_brain" : "brain5",
+  "epoch_brain" : 200,
+  "input_shape" : 1,
+  "output_shape" : 1,
+  "path_param_brains" : "data/brain/brains_params.json",
+  "path_data_train" : {
+    "data_input" : "training/data/inputs_train/inputs.csv",
+    "data_output" : "training/data/output_train/output.csv",
+    "data_input_test" : "training/data/inputs_test/inputs.csv",
+    "data_output_test" : "training/data/output_test/output.csv"
+  },
+  "path_data_test" : {
+    "data_input" : "training/data/inputs_test/inputs.csv",
+    "data_output" : "training/data/output_test/output.csv",
+    "path_result" : "training/data/simuled/simuled.csv"
+  },
+  "path_data_play" : {
+    "data_formated" : "play/data/formated_data/formated_data.csv",
+    "data_input" : "play/data/inputs/inputs.csv",
+    "data_output" : "data/to_client/data_out.csv"
+  },
+  "path_data_sketch" : {
+    "data_simuled" : "play/data/output/output.csv"
+  },
+  "path_formater_to_play" : {
+    "data_formated" : "play/data/formated_data/formated_data.csv",
+    "data_input" : "play/data/inputs/inputs.csv",
+    "data_to_play" : "data/to_player/data_play.csv",
+    "data_output" : "play/data/output/output.csv"
+  },
+    "path_formater_to_train" : {
+    "data_formated" : "training/data/formated_data/formated_data.csv",
+      "data_to_train" : "data/to_trainer/data_train_3.csv",
+      "data_input" : "training/data/inputs_train/inputs.csv",
+    "data_output" : "training/data/output_train/output.csv"
+  },
+      "path_formater_to_test" : {
+    "data_formated" : "training/data/formated_data_test/formated_data.csv",
+      "data_to_test" : "data/to_tester/data_test_2.csv",
+      "data_input" : "training/data/inputs_test/inputs.csv",
+    "data_output" : "training/data/output_test/output.csv",
+        "data_simuled" : "training/data/simuled/simuled_data.csv"
+  }
+}

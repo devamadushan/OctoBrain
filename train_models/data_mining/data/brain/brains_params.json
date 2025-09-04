@@ -1,0 +1,90 @@
+{
+    "brain2": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ]
+    },
+    "brain3": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ]
+    },
+    "brain4": {
+        "params": [
+            "Date",
+            "Time",
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ]
+    },
+    "brain3-1": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ]
+    },
+    "brain8": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ],
+        "epochs": [
+            11
+        ],
+        "duree": [
+            "0:00:14.343891"
+        ],
+        "shape": "(15310, 5)"
+    },
+    "brain5": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]",
+            "VANNE_UTA_CHAUD [I]",
+            "VANNE_UTA_FROID [I]",
+            "PRESSION_EXTERIEUR [R]",
+            "HYGROMETRIE_CELLULE [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ],
+        "epochs": 11,
+        "duree": "0:00:14.262777",
+        "shape": "(15310, 9)"
+    }
+}

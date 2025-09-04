@@ -1,0 +1,506 @@
+{
+    "brain_1": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]_C1"
+        ],
+        "epochs": [
+            100
+        ],
+        "duree": [
+            "0:08:58.278462"
+        ],
+        "shape": [
+            "(9729, 5)"
+        ],
+        "MAE": [
+            0.29
+        ],
+        "MSE": [
+            0.13
+        ],
+        "R2": [
+            0.99
+        ],
+        "echantillonner": [
+            true
+        ],
+        "time_echantillon": [
+            5
+        ],
+        "metrics": [
+            [
+                "mae",
+                "mae",
+                "mae"
+            ]
+        ],
+        "loss": [
+            "mae"
+        ],
+        "meta": [
+            "../Meta/thevaran/brains/brain_1_20250812_105735_36ed22a9.zip"
+        ],
+        "comment": [
+            "Test avec uniquement les conditions."
+        ]
+    },
+    "brain_2": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "day_sin",
+            "day_cos"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]_C1"
+        ],
+        "epochs": [
+            360
+        ],
+        "duree": [
+            "0:34:38.902262"
+        ],
+        "shape": [
+            "(9729, 10)"
+        ],
+        "MAE": [
+            0.46
+        ],
+        "MSE": [
+            0.34
+        ],
+        "R2": [
+            0.96
+        ],
+        "echantillonner": [
+            false
+        ],
+        "time_echantillon": [
+            5
+        ],
+        "metrics": [
+            [
+                "mae",
+                "mae",
+                "mae"
+            ]
+        ],
+        "loss": [
+            "mae"
+        ],
+        "meta": [
+            "../Meta/thevaran/brains/brain_2_20250812_154019_300e7b1d.zip"
+        ],
+        "comment": [
+            "Test avec uniquement les conditions."
+        ]
+    },
+    "brain_3": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "day_sin",
+            "day_cos",
+            "ecart_temp_C3",
+            "ecart_temp_C2",
+            "ecart_temp_C1",
+            "ecart_temp_C4_C",
+            "ecart_temp_C4_F"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]_C1"
+        ],
+        "epochs": 36,
+        "duree": "0:08:16.841785",
+        "shape": "(22972, 15)",
+        "MAE": 0.58,
+        "MSE": 0.55,
+        "R2": 0.98,
+        "echantillonner": true,
+        "time_echantillon": 5,
+        "metrics": [
+            "mae",
+            "mae",
+            "mae"
+        ],
+        "loss": "mae",
+        "meta": "../Meta/thevaran/brains/brain_3_20250812_170020_7f3bb967.zip",
+        "comment": "Test avec uniquement les conditions."
+    },
+    "brain_3_2": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "day_sin",
+            "day_cos",
+            "CONSIGNE_VENTILATION [I]_C1"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]_C1"
+        ],
+        "epochs": 36,
+        "duree": "0:04:59.184890",
+        "shape": "(12414, 11)",
+        "MAE": 1.18,
+        "MSE": 3.2,
+        "R2": 0.42,
+        "echantillonner": true,
+        "time_echantillon": 5,
+        "metrics": [
+            "mae",
+            "mae",
+            "mae"
+        ],
+        "loss": "mae",
+        "meta": "../Meta/thevaran/brains/brain_3_2_20250812_174607_2f4db069.zip",
+        "comment": "Test avec uniquement les conditions."
+    },
+    "brain_3_1": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "day_sin",
+            "day_cos",
+            "CONSIGNE_VENTILATION [I]_C1"
+        ],
+        "outputs": [
+            "anomalie"
+        ],
+        "epochs": 30,
+        "duree": "0:00:06.464268",
+        "shape": "(8, 11)",
+        "MAE": 0.95,
+        "MSE": 0.91,
+        "R2": -195031136.0,
+        "echantillonner": true,
+        "time_echantillon": 5,
+        "metrics": [
+            "mae",
+            "mae",
+            "mae"
+        ],
+        "loss": "mae",
+        "meta": "../Meta/thevaran/brains/brain_3_1_20250812_210545_6689f952.zip",
+        "comment": "Test avec uniquement les conditions."
+    },
+    "brain_3_3": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "day_sin",
+            "day_cos",
+            "CONSIGNE_VENTILATION [I]_C1"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]_C1",
+            "TEMPERATURE_REPRISE [R]_C2",
+            "TEMPERATURE_REPRISE [R]_C3",
+            "anomalie"
+        ],
+        "epochs": 40,
+        "duree": "4:25:26.170439",
+        "shape": "(713408, 11)",
+        "MAE": 1.15,
+        "MSE": 5.02,
+        "R2": 0.48,
+        "echantillonner": false,
+        "time_echantillon": 5,
+        "metrics": [
+            "mae",
+            "mae",
+            "mae"
+        ],
+        "loss": "mae",
+        "meta": "../Meta/thevaran/brains/brain_3_3_20250813_131545_03241d44.zip",
+        "comment": "Test avec uniquement les conditions."
+    },
+    "Twin_E3": {
+        "params": [
+            "DEBIT_BP [B]_C4",
+            "DEBIT_HP [B]_C4",
+            "TEMPERATURE_MEG_CHAUD [R]_C4",
+            "TEMPERATURE_MEG_FROID [R]_C4",
+            "BP_R134_EN_BARS [R]_C4",
+            "BP_R134_EN_DEGRES [R]_C4",
+            "HP_R134_EN_BARS [R]_C4",
+            "HP_R134_EN_DEGRES [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "TEMPERATURE_REPRISE [R]_C1",
+            "TEMPERATURE_REPRISE [R]_C2",
+            "TEMPERATURE_REPRISE [R]_C3",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C1",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C2",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C3",
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3"
+        ],
+        "outputs": [
+            "cluster"
+        ],
+        "epochs": 100,
+        "duree": "6:48:26.020290",
+        "shape": "(713408, 22)",
+        "MAE": 0.67,
+        "MSE": 0.95,
+        "R2": 0.68,
+        "echantillonner": false,
+        "time_echantillon": 5,
+        "metrics": [
+            "mae",
+            "mae",
+            "mae"
+        ],
+        "loss": "mae",
+        "meta": "../Meta/thevaran/brains/Twin_E3_20250813_220714_3ef71952.zip",
+        "comment": "Prédisctions des anomalies de l'ecolab 3"
+    },
+    "Twin_E3_2": {
+        "params": [
+            "DEBIT_BP [B]_C4",
+            "DEBIT_HP [B]_C4",
+            "TEMPERATURE_MEG_CHAUD [R]_C4",
+            "TEMPERATURE_MEG_FROID [R]_C4",
+            "BP_R134_EN_BARS [R]_C4",
+            "BP_R134_EN_DEGRES [R]_C4",
+            "HP_R134_EN_BARS [R]_C4",
+            "HP_R134_EN_DEGRES [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "TEMPERATURE_REPRISE [R]_C1",
+            "TEMPERATURE_REPRISE [R]_C2",
+            "TEMPERATURE_REPRISE [R]_C3",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C1",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C2",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C3",
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3"
+        ],
+        "outputs": [
+            "cluster"
+        ],
+        "epochs": [
+            50
+        ],
+        "duree": [
+            "2:51:03.170618"
+        ],
+        "shape": [
+            "(699999, 22)"
+        ],
+        "MAE": [
+            0.66
+        ],
+        "MSE": [
+            0.88
+        ],
+        "R2": [
+            0.62
+        ],
+        "echantillonner": [
+            false
+        ],
+        "time_echantillon": [
+            5
+        ],
+        "metrics": [
+            [
+                "mae",
+                "mae",
+                "mae"
+            ]
+        ],
+        "loss": [
+            "mae"
+        ],
+        "meta": [
+            "../Meta/thevaran/brains/Twin_E3_2_20250814_114208_29aaf386.zip"
+        ],
+        "comment": [
+            "Prédisctions des anomalies de l'ecolab 3"
+        ]
+    },
+    "Twin_E3_3": {
+        "params": [
+            "DEBIT_BP [B]_C4",
+            "DEBIT_HP [B]_C4",
+            "TEMPERATURE_MEG_CHAUD [R]_C4",
+            "TEMPERATURE_MEG_FROID [R]_C4",
+            "BP_R134_EN_BARS [R]_C4",
+            "BP_R134_EN_DEGRES [R]_C4",
+            "HP_R134_EN_BARS [R]_C4",
+            "HP_R134_EN_DEGRES [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "TEMPERATURE_REPRISE [R]_C1",
+            "TEMPERATURE_REPRISE [R]_C2",
+            "TEMPERATURE_REPRISE [R]_C3",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C1",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C2",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C3",
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3"
+        ],
+        "outputs": [
+            "cluster"
+        ],
+        "epochs": 36,
+        "duree": "2:08:12.334842",
+        "shape": "(699999, 22)",
+        "MAE": 0.64,
+        "MSE": 0.95,
+        "R2": 0.59,
+        "echantillonner": false,
+        "time_echantillon": 5,
+        "metrics": [
+            "mae",
+            "mae",
+            "mae"
+        ],
+        "loss": "mae",
+        "meta": "../Meta/thevaran/brains/Twin_E3_3_20250814_013822_c55ab835.zip",
+        "comment": "Prédisctions des anomalies de l'ecolab 3"
+    },
+    "Twin_E3_5": {
+        "params": [
+            "DEBIT_BP [B]_C4",
+            "DEBIT_HP [B]_C4",
+            "TEMPERATURE_MEG_CHAUD [R]_C4",
+            "TEMPERATURE_MEG_FROID [R]_C4",
+            "BP_R134_EN_BARS [R]_C4",
+            "BP_R134_EN_DEGRES [R]_C4",
+            "HP_R134_EN_BARS [R]_C4",
+            "HP_R134_EN_DEGRES [R]_C4",
+            "CONSIGNE_BALLON_CHAUD [R]_C4",
+            "CONSIGNE_BALLON_FROID [R]_C4",
+            "TEMPERATURE_REPRISE [R]_C1",
+            "TEMPERATURE_REPRISE [R]_C2",
+            "TEMPERATURE_REPRISE [R]_C3",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C1",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C2",
+            "TEMPERATURE_RETOUR_CHAUD [R]_C3",
+            "TEMPERATURE_CONSIGNE [R]_C1",
+            "TEMPERATURE_CONSIGNE [R]_C3",
+            "TEMPERATURE_CONSIGNE [R]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C1",
+            "HYGROMETRIE_CONSIGNE [I]_C2",
+            "HYGROMETRIE_CONSIGNE [I]_C3"
+        ],
+        "outputs": [
+            "cluster"
+        ],
+        "epochs": 10,
+        "duree": "0:42:02.855579",
+        "shape": "(699999, 22)",
+        "MAE": 1.28,
+        "MSE": 2.91,
+        "R2": -0.25,
+        "echantillonner": false,
+        "time_echantillon": 5,
+        "metrics": [
+            "mae",
+            "mae",
+            "mae"
+        ],
+        "loss": "mae",
+        "meta": "../Meta/thevaran/brains/Twin_E3_5_20250814_141859_bfb04403.zip",
+        "comment": "Prédisctions des anomalies de l'ecolab 3 softMax"
+    },
+    "Test": {
+        "params": [
+            "TEMP_SORTIE_INF_ECORIUM [R]"
+        ],
+        "outputs": [
+            "TEMP_SORTIE_SUP_ECORIUM [R]"
+        ],
+        "epochs": [
+            50
+        ],
+        "duree": [
+            "0:00:27.238699"
+        ],
+        "shape": [
+            "(1497, 1)"
+        ],
+        "MAE": [
+            1.01
+        ],
+        "MSE": [
+            1.58
+        ],
+        "R2": [
+            0.9
+        ],
+        "echantillonner": [
+            true
+        ],
+        "time_echantillon": [
+            1
+        ],
+        "metrics": [
+            [
+                "mae",
+                "mae",
+                "mae"
+            ]
+        ],
+        "loss": [
+            "mae"
+        ],
+        "meta": [
+            "../Meta/thevaran/brains/Test_20250904_145009_cc5ef289.zip"
+        ],
+        "comment": [
+            "E3 C1 avec un ecart temp 0.30s "
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "brain2": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ]
+    },
+    "brain3": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ]
+    },
+    "brain4": {
+        "params": [
+            "Date",
+            "Time",
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ]
+    },
+    "brain3-1": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ]
+    },
+    "brain8": {
+        "params": [
+            "TEMPERATURE_SONDE [R]",
+            "TEMPERATURE_CONSIGNE [R]",
+            "TEMPERATURE_SOUFFLAGE [R]",
+            "TEMPERATURE_ALLER_CHAUD [R]",
+            "TEMPERATURE_ALLER_FROID [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ],
+        "epochs": [
+            11
+        ],
+        "duree": [
+            "0:00:14.343891"
+        ],
+        "shape": "(15310, 5)"
+    },
+    "brain5": {
+        "params": [
+            "TEMPERATURE_CONSIGNE [R]"
+        ],
+        "outputs": [
+            "TEMPERATURE_REPRISE [R]"
+        ],
+        "epochs": [
+            1500
+        ],
+        "duree": [
+            "0:03:27.883756"
+        ],
+        "shape": "(850, 1)"
+    }
+}
