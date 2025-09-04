@@ -1,12 +1,13 @@
-
 ## Description
+
+![Logo du projet](logo.webp)
 
 ## Rôle
 Le projet **Octopus Brain** est un outil destiné à créer des modèles simples et à les conserver pour pouvoir les réutiliser.
 
 --- 
 
-## Outil
+### Outil
 **version : 013**
 ### Modules
 - **SmartFrame** : traite les données
@@ -17,7 +18,7 @@ Le projet **Octopus Brain** est un outil destiné à créer des modèles simples
 - **Tester** : évalue le modèle
 - **Player** : interroge les modèles existants
 - **Cleaner** : nettoie les données résiduelles de l’outil et sauvegarde les métadonnées
-## Paramétrés du modèle
+### Paramétrés du modèle
 Dans ce projet, nous avons utilisé un modèle Sequential en deep learning.  
 L’architecture est composée de :
 - Couche d’entrée dense, normalisée avec _BatchNormalization_ et régularisée avec _Dropout (20%)_
@@ -112,8 +113,6 @@ L’architecture est composée de :
 ├── trainer.py         # Module qui permet d’entraîner un modèle et de l’enregistrer
 ```
 
-
-![[logo.webp]]
 
 
 
