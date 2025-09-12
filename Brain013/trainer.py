@@ -36,7 +36,7 @@ class Trainer:
         early_stop = EarlyStopping(
             monitor="loss",  # <-- entraînement uniquement
             mode="min",
-            patience=30,
+            patience=3000,
             min_delta=1e-4,
             restore_best_weights=True
         )

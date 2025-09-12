@@ -463,22 +463,22 @@
             "TEMP_SORTIE_SUP_ECORIUM [R]"
         ],
         "epochs": [
-            50
+            500
         ],
         "duree": [
-            "0:00:27.238699"
+            "0:01:05.472058"
         ],
         "shape": [
             "(1497, 1)"
         ],
         "MAE": [
-            1.01
+            0.83
         ],
         "MSE": [
-            1.58
+            1.1
         ],
         "R2": [
-            0.9
+            0.93
         ],
         "echantillonner": [
             true
@@ -497,7 +497,7 @@
             "mae"
         ],
         "meta": [
-            "../Meta/thevaran/brains/Test_20250904_145009_cc5ef289.zip"
+            "../Meta/thevaran/brains\\Test_20250912_185625_211d2cd4.zip"
         ],
         "comment": [
             "E3 C1 avec un ecart temp 0.30s "

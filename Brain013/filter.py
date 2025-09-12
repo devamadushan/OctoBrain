@@ -6,8 +6,6 @@
 import json
 import pandas as pd
 
-
-
 # ******************************** Imports Terminal **************************#
 #   pip install ...
 

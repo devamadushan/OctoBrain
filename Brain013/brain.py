@@ -14,7 +14,12 @@ import random
 import tensorflow as tf
 # ******************************** Imports Terminal **************************#
 
-#   pip install tenserflow
+#   pip install -r requirements.txt
+#   pip install keras
+#   pip install tensorflow
+#   pip install pandas
+#   pip install matplotlib
+#   pip install scikit-learn
 
 # **************************** Lire le fishier params Json  *******************#
 

@@ -1,21 +1,20 @@
 {
   "params" : [
-
-    "TEMP_SORTIE_INF_ECORIUM [R]"
-
-
+   "CONSIGNE_BALLON_FROID [R]_C4",
+"CONSIGNE_BALLON_CHAUD [R]_C4"
 
   ],
   "result" : [
-  "TEMP_SORTIE_SUP_ECORIUM [R]"
+   "TEMPERATURE_MEG_FROID [R]_C4",
+    "TEMPERATURE_MEG_CHAUD [R]_C4"
 
   ],
-  "path_brain" : "brains/Test.keras",
-  "name_brain" : "Test",
-  "epoch_brain" : 50,
-  "echantilloner" : true,
+  "path_brain" : "brains/windows_test.keras",
+  "name_brain" : "Test_windows",
+  "epoch_brain" : 500,
+  "echantilloner" : false,
   "time_echantion" : 1,
-  "sep" : ";",
+  "sep" : ",",
   "datetime" : {
     "date" : "date",
     "time" : "time",
