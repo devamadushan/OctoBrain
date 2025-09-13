@@ -260,3 +260,5 @@ if __name__ == "__main__":
     modele.write_brains_params(duree_entrainement , shape , mae , mse , r2 , ec,time_echantion , path , metrics , loss , comment)
 
     #cleaning.clean_all()
+if __name__ == "__main__":
+    print('hello')

@@ -1,0 +1,27 @@
+services:
+  tf:
+    build: .
+    container_name: tf-knugs-gpu
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - /home/deva/.nv/ComputeCache:/root/.nv/ComputeCache
+    command: bash -lc "tail -f /dev/null"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - TF_FORCE_GPU_ALLOW_GROWTH=true
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+    # gpus: all   # ← si 'deploy' ne marche pas chez toi, commente deploy et décommente cette ligne
+    ports:
+      - "8888:8888"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
