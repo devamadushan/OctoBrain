@@ -1,5 +1,5 @@
  # Image officielle TF GPU sans Jupyter
-FROM tensorflow/tensorflow:nightly-gpu
+FROM tensorflow/tensorflow:2.20.0-gpu
 
 # Qualité de vie & reproductibilité
 ENV DEBIAN_FRONTEND=noninteractive \

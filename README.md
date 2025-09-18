@@ -1,4 +1,4 @@
-## Description
+# Description
 
 ![Logo du projet](logo.webp)
 
@@ -6,10 +6,19 @@
 Le projet **Octopus Brain** est un outil destiné à créer des modèles simples et à les conserver pour pouvoir les réutiliser.
 
 --- 
+# Installation des dépendances
+1. Docker (wsl -> windows)
+2. Git
+## Git 
+Une fois le dépôt cloné avec `git clone` (ou mis à jour avec `git pull`), construisez et lancez l’image avec la commande :
+``` bash
+docker compose up -d
+```
+Toutes les dépendances nécessaires seront alors automatiquement installées.
 
-### Outil
+# Outil
 **version : 013**
-### Modules
+## Modules
 - **SmartFrame** : traite les données
        - **Échantillonneur** : échantillonne les données  
     - **Formater** : corrige et formate les données
@@ -18,7 +27,7 @@ Le projet **Octopus Brain** est un outil destiné à créer des modèles simples
 - **Tester** : évalue le modèle
 - **Player** : interroge les modèles existants
 - **Cleaner** : nettoie les données résiduelles de l’outil et sauvegarde les métadonnées
-### Paramétrés du modèle
+## Paramétrés du modèle
 Dans ce projet, nous avons utilisé un modèle Sequential en deep learning.  
 L’architecture est composée de :
 - Couche d’entrée dense, normalisée avec _BatchNormalization_ et régularisée avec _Dropout (20%)_
@@ -28,13 +37,13 @@ L’architecture est composée de :
 - Fonction de perte : adaptée à la régression (ex. _MSE_)
 - Métriques de suivi : _MAPE_ et _MSE_
 
-### Métadonnées
+## Métadonnées
 - Noms des paramètres (entrée, sortie)
 - Données d’entraînement (in / out)
 - Résultats des indicateurs d’évaluation (MAE, MSE, R²)
 - Temps d’entraînement
 - Fonction de perte (_loss_) utilisée
-### Métriques d’évaluation
+## Métriques d’évaluation
 - MAE : (Mean Absolute Error)
 	- Faible -> GOOD , Fort -> BAD
 	Mesure la moyenne des écarts absolus entre les valeurs prédites et les valeurs réelles.
@@ -53,12 +62,12 @@ L’architecture est composée de :
 - FORMULE : 
 	$R2=1−∑(yi​−yˉ​)2∑(yi​−y^​i​)2​$
 
-### Modéles
+## Modéles
 - **brain_1** : un jumeau numérique permettant de simuler la température de reprise en fonction des conditions des cellules (CEREEP–Ecotron Île-de-France).
 - **brain_2** : un jumeau numérique pour simuler la température de reprise d’une cellule climatique (CEREEP–Ecotron Île-de-France).
 
 
-### Arborescence
+## Arborescence
 ```bash
 ├── brain.py          # Module cerveau de l'outil, contrôle tous les autres modules
 ├── brains            # Dossier où sont stockés les modèles entraînés

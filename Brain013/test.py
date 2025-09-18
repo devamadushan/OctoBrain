@@ -1,3 +1,4 @@
+
 import tensorflow as tf
 
 # Active la gestion mémoire GPU "à la demande"
@@ -6,3 +7,4 @@ for g in gpus:
     tf.config.experimental.set_memory_growth(g, True)
 
 print("GPUs détectés :", gpus)
+
